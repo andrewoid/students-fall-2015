@@ -49,3 +49,7 @@
 [submodule "kops-mco152"]
 	path = kops-mco152
 	url = git@github.com:leahkops/kops-mco152.git
+[submodule "foxman-mco152"]
+	path = foxman-mco152
+	url = git@github.com:AhuvaFoxman/foxman-mco152.git
+	branch = master
