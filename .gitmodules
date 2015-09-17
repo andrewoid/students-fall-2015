@@ -1,55 +1,72 @@
 [submodule "gottesman-mco152"]
 	path = gottesman-mco152
 	url = git@github.com:LGottesman/gottesman-mco152.git
+	branch = master
 [submodule "rozenberg-mco152"]
 	path = rozenberg-mco152
 	url = git@github.com:eliseRozenberg/rozenberg-mco152.git
+	branch = master
 [submodule "neuhoff-mco152"]
 	path = neuhoff-mco152
 	url = git@github.com:ahuvaN/neuhoff-mco152.git
+	branch = master
 [submodule "kerstein-mco152"]
 	path = kerstein-mco152
 	url = git@github.com:renakerstein/kerstein-mco152.git
+	branch = master
 [submodule "glazer-mco152"]
 	path = glazer-mco152
 	url = git@github.com:cglazer/glazer-mco152.git
+	branch = master
 [submodule "jaffa-mco152"]
 	path = jaffa-mco152
 	url = git@github.com:ljaffa/jaffa-mco152.git
+	branch = master
 [submodule "dusowitz-mco152"]
 	path = dusowitz-mco152
 	url = git@github.com:shiradusowitz/dusowitz-mco152.git
-[submodule "turner.mco152"]
-	path = turner.mco152
-	url = git@github.com:chayaturner/turner.mco152.git
+	branch = master
 [submodule "feuchtwanger-mco152"]
 	path = feuchtwanger-mco152
 	url = git@github.com:AriellaFeuchtwanger/feuchtwanger-mco152.git
+	branch = master
 [submodule "englard-mco152"]
 	path = englard-mco152
 	url = git@github.com:NaomiEnglard/englard-mco152.git
+	branch = master
 [submodule "yoffe-mco152"]
 	path = yoffe-mco152
 	url = git@github.com:cyoffe/yoffe-mco152.git
+	branch = master
 [submodule "ney-mco152"]
 	path = ney-mco152
 	url = git@github.com:akney/ney-mco152.git
+	branch = master
 [submodule "yarmark-mco152"]
 	path = yarmark-mco152
 	url = git@github.com:lyarmark/yarmark-mco152.git
+	branch = master
 [submodule "golub-mco152"]
 	path = golub-mco152
 	url = git@github.com:mgolub/golub-mco152.git
+	branch = master
 [submodule "neustadt-mco152"]
 	path = neustadt-mco152
 	url = git@github.com:shaindyNeustadt/neustadt-mco152.git
+	branch = master
 [submodule "shapiro-mco152"]
 	path = shapiro-mco152
 	url = git@github.com:chavashapiro/shapiro-mco152.git
+	branch = master
 [submodule "kops-mco152"]
 	path = kops-mco152
 	url = git@github.com:leahkops/kops-mco152.git
+	branch = master
 [submodule "foxman-mco152"]
 	path = foxman-mco152
 	url = git@github.com:AhuvaFoxman/foxman-mco152.git
+	branch = master
+[submodule "turner-mco152"]
+	path = turner-mco152
+	url = git@github.com:chayaturner/turner-mco152.git
 	branch = master
