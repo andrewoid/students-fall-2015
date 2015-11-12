@@ -1,0 +1,7 @@
+Your Unit Tests	6/10
+My Unit Tests	7/12
+
+failed testToStringWithPartiallyFilledPlane() -3.5
+	toString() fails when only some of the seats are filled
+	
+68.5

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/dusowitz-mco152"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/englard-mco152"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/feuchtwanger-mco152"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/foxman-mco152"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/glazer-mco152"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/golub-mco152"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/jaffa-mco152"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/kerstein-mco152"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/kops-mco152"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/neuhoff-mco152"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/neustadt-mco152"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/ney-mco152"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/rozenberg-mco152"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/shapiro-mco152"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/turner-mco152"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/yarmark-mco152"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/yoffe-mco152"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,40 @@
+Your Unit Tests	6/10
+My Unit Tests	3/12
+
+failed testReserveThrowsAlreadyReservedException
+	AirplaneSeats seats = new AirplaneSeats(1, 1);
+	seats.reserve("A1");
+	
+	threw a SeatOutOfBoundsException
+	
+failed testReserveGroupOnPartiallyFilledPlane
+	test threw NotEnoughSeatsException
+	
+failed testToStringWithPartiallyFilledPlane
+	test threw SeatOutOfBoundsException
+	
+failed testReserveLargeSeatNumber
+	test threw SeatOutOfBoundsException
+
+failed testIsPlaneFullReturnsFalse
+		AirplaneSeats seats = new AirplaneSeats(1, 1);
+		Assert.assertFalse(seats.isPlaneFull());
+		
+	assert failed
+	
+failed testIsPlaneFullReturnsTrue
+		AirplaneSeats seats = new AirplaneSeats(1, 1);
+		Assert.assertFalse(seats.isPlaneFull());
+		
+	assert failed
+	
+failed testToStringWithFullPlane
+	test threw SeatOutOfBoundsException
+	
+failed testToStringWithEmptyPlane
+	test threw NullPointerException
+	
+failed testReserveGroupOnEmptyPlane
+	test threw NotEnoughSeatsException
+	
+54.5
