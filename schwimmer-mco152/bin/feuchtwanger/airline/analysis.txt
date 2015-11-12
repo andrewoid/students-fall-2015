@@ -11,3 +11,6 @@ failed testReserveGroupOnEmptyPlane() -3.5
 	expected:<[A[1, B1]]> but was:<[A[3, A4]]>
 	
 86
++3
+
+89
