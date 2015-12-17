@@ -16,7 +16,6 @@
 	<classpathentry combineaccessrules="false" kind="src" path="/ney-mco152"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/rozenberg-mco152"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/shapiro-mco152"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/turner-mco152"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/yarmark-mco152"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/yoffe-mco152"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
