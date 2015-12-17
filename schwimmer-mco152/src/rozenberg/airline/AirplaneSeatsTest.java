@@ -1,5 +1,7 @@
 package rozenberg.airline;
 
+import java.util.List;
+
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -25,7 +27,7 @@ public class AirplaneSeatsTest {
 		seats.reserveAll("A3", "B3", "C3", "D3");
 		Assert.assertEquals("  ABCD\n" + "1 ####\n" + "2 ####\n" + "3 ####\n", seats.toString());
 	}
-
+	
 	@Test
 	public void testToStringWithPartiallyFilledPlane() throws AlreadyReservedException, SeatOutOfBoundsException {
 		AirplaneSeats seats = new AirplaneSeats(3, 4);
@@ -102,10 +104,12 @@ public class AirplaneSeatsTest {
 	/**
 	 * Tests that reserveGroup() reserves the correct seats when called on an empty plane.
 	 */
-	public void testReserveGroupOnEmptyPlane() throws NotEnoughSeatsException {
+	public void testReserveGroupOnEmptyPlane() throws NotEnoughSeatsException, AlreadyReservedException, SeatOutOfBoundsException {
 		AirplaneSeats seats = new AirplaneSeats(4, 5);
-		seats.reserveGroup(2);
-		Assert.assertEquals("[A1, B1]", seats.reserveGroup(2).toString());
+		List<String> reserved = seats.reserveGroup(2);
+		Assert.assertEquals(2, reserved.size());
+		Assert.assertTrue(reserved.contains("A1"));
+		Assert.assertTrue(reserved.contains("B1"));
 		Assert.assertTrue(seats.isReserved("A1"));
 		Assert.assertTrue(seats.isReserved("B1"));
 	}
@@ -123,7 +127,10 @@ public class AirplaneSeatsTest {
 		seats.reserve("A1");
 		seats.reserve("A2");
 		seats.reserve("A3");
-		Assert.assertEquals("[B1, C1]", seats.reserveGroup(2).toString());
+		List<String> reserved = seats.reserveGroup(2);
+		Assert.assertEquals(2, reserved.size());
+		Assert.assertTrue(reserved.contains("B1"));
+		Assert.assertTrue(reserved.contains("C1"));
 		Assert.assertTrue(seats.isReserved("B1"));
 		Assert.assertTrue(seats.isReserved("C1"));
 	}
@@ -133,7 +140,7 @@ public class AirplaneSeatsTest {
 	 * Tests that reserveGroup() throws NotEnoughSeatsException if there are not enough 
 	 * seats available together for the group.
 	 */
-	public void testReserveGroupThrowsNotEnoughSeatsException() {
+	public void testReserveGroupThrowsNotEnoughSeatsException() throws AlreadyReservedException, SeatOutOfBoundsException {
 		AirplaneSeats seats = new AirplaneSeats(1, 1);
 		try {
 			seats.reserveGroup(3);

@@ -3,7 +3,7 @@ package schwimmer.ups;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class UPSDatabaseTest {
+public class PackageTrackerTest {
 
 	@Test
 	/** 

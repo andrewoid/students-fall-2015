@@ -1,5 +1,7 @@
 package englard.airline;
 
+import java.util.List;
+
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -104,8 +106,10 @@ public class AirplaneSeatsTest {
 	 */
 	public void testReserveGroupOnEmptyPlane() throws NotEnoughSeatsException {
 		AirplaneSeats seats = new AirplaneSeats(4, 5);
-		seats.reserveGroup(2);
-		Assert.assertEquals("[A1, B1]", seats.reserveGroup(2).toString());
+		List<String> reserved = seats.reserveGroup(2);
+		Assert.assertEquals(2, reserved.size());
+		Assert.assertTrue(reserved.contains("A1"));
+		Assert.assertTrue(reserved.contains("B1"));
 		Assert.assertTrue(seats.isReserved("A1"));
 		Assert.assertTrue(seats.isReserved("B1"));
 	}
@@ -123,7 +127,10 @@ public class AirplaneSeatsTest {
 		seats.reserve("A1");
 		seats.reserve("A2");
 		seats.reserve("A3");
-		Assert.assertEquals("[B1, C1]", seats.reserveGroup(2).toString());
+		List<String> reserved = seats.reserveGroup(2);
+		Assert.assertEquals(2, reserved.size());
+		Assert.assertTrue(reserved.contains("B1"));
+		Assert.assertTrue(reserved.contains("C1"));
 		Assert.assertTrue(seats.isReserved("B1"));
 		Assert.assertTrue(seats.isReserved("C1"));
 	}
