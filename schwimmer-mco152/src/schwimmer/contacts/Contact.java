@@ -32,12 +32,12 @@ public class Contact {
 	public String getName() {
 		return name;
 	}
-	
-	public String toString() {
-		return name;
-	}
 
 	public String getEmail() {
 		return email;
+	}
+	
+	public String toString() {
+		return name;
 	}
 }

@@ -1,6 +1,0 @@
-Your Unit Tests	0/10
-My Unit Tests	1/12
-
-If your Seat class had an equals() and hashCode() method its
-Your Unit Tests	4/10
-My Unit Tests	2/12
